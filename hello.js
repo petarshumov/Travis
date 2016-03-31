@@ -1,12 +1,14 @@
+// Load the http module to create an http server.
 var http = require('http');
-http.createServer(function (req, res) {
-    'use strict';
-    res.writeHead(200, {
-        'Content-Type': 'text/plain'
-    });
-    res.end('Hello Peter\n'); // missing semi-colon will fail the build
-}).listen(1337, '127.0.0.1'); // reporting to the console
 
-// feedback to the user
-console.log('Server running at https://127.0.0.1:1337');
-// this is EOF
+// Configure our HTTP server to respond with Hello World to all requests.
+var server = http.createServer(function (request, response) {
+  response.writeHead(200, {"Content-Type": "text/plain"});
+  response.end("Hello World\n");
+});
+
+// Listen on port 8000, IP defaults to 127.0.0.1
+server.listen(8000);
+
+// Put a friendly message on the terminal
+console.log("Server running at http://127.0.0.1:8000/");
