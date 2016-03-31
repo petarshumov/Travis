@@ -1,14 +1,12 @@
-<!DOCTYPE HTML>
-<html>
-<body>
+var http = require('http');
+http.createServer(function (req, res) {
+    'use strict';
+    res.writeHead(200, {
+        'Content-Type': 'text/plain'
+    });
+    res.end('Hello Peter\n'); // missing semi-colon will fail the build
+}).listen(1337, '127.0.0.1'); // reporting to the console
 
-  <p>Header...</p>
-
-  <script>
-    alert('Hello, Petar')
-  </script>
-
-  <p>...Footer</p>
-
-</body>
-</html>
+// feedback to the user
+console.log('Server running at https://127.0.0.1:1337');
+// this is EOF
