@@ -12,10 +12,10 @@ after_success:
   - git remote -v
   - git config --global user.email "petarshumov@gmail.com"
   - git config --global user.name "petarshumov"
- - git checkout master
- - npm version patch
+  - git checkout master
+  - npm version patch
   - git commit -am "[skip ci] bump version"
- - git log --oneline
+  - git log --oneline
   - git remote set-url origin https://github.com/petarshumov/Travis
   - git push origin master
 #  - npm run coverage
