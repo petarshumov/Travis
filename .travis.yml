@@ -14,13 +14,13 @@ before_script:
 after_success:
   - echo $TOTO
   - git remote -v
-  - git config --global user.email "leapfrogopus@yahoo.com"
-  - git config --global user.name "seansanders"
+  - git config --global user.email "petarshumov@gmail.com"
+  - git config --global user.name "petarshumov"
   - git checkout master
   - npm version patch
   - git commit -am "[skip ci] bump version"
   - git log --oneline
-  - git remote set-url origin git@github.com:seansanders/travis.git
+  - git remote set-url origin git@github.com:petarshumov/travis.git
   - git push origin master
 #  - npm run coverage
 #  - mv coverage/cobertura-coverage.xml shippable/codecoverage/coverage.xml
