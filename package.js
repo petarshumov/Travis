@@ -1,18 +1,12 @@
 {
-    "name": "travis-helloworld",
-    "version": "0.1.0",
-    "description": "travis-helloworld application",
-    "main": "hello.js",
-    "scripts": {
-        "test": "grunt --verbose"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/thaiat/travis-helloworld.git"
-    },
-    "devDependencies": {
-        "grunt-cli": "~0.1.13",
-        "grunt": "~0.4.5",
-        "grunt-contrib-jshint": "~0.10.0"
-    }
+  "name": "learn-travis",
+  "description": "Simple nodejs, travis and grunt demo",
+  "author": "your name here :-)",
+  "version": "0.0.1",
+  "devDependencies": {
+    "jshint": "^2.6.0"
+  },
+  "scripts": {
+    "test": "./node_modules/jshint/bin/jshint hello.js"
+  }
 }
