@@ -9,7 +9,6 @@ before_script:
  # - npm link
  # - mkdir -p shippable/codecoverage
 
- script: ./hello.js
  
 after_success:
   - echo $TOTO
