@@ -1,6 +1,6 @@
 {
-  "name": "learn-travis",
-  "description": "Simple nodejs, travis and grunt demo",
+  "name": "testing travis",
+  "description": "Simple nodejs test code",
   "author": "petar shumov",
   "version": "0.0.1",
   "devDependencies": {
