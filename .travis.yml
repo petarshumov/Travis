@@ -1,3 +1,15 @@
 language: node_js
 node_js:
   - 0.12
+  
+after_success:
+ - echo $TOTO
+ - git remote -v
+ - git config --global user.email "petarshumov@gmail.com"
+ - git config --global user.name "petarshumov"
+ - git checkout master
+ - npm version patch
+ - git commit -am "[skip ci] bump version"
+ - git log --oneline
+ - git remote set-url origin git@github.com:petashumov/travis.git
+ - git push origin master

@@ -1,7 +1,7 @@
 {
   "name": "learn-travis",
   "description": "Simple nodejs, travis and grunt demo",
-  "author": "your name here :-)",
+  "author": "petar shumov",
   "version": "0.0.1",
   "devDependencies": {
     "jshint": "^2.6.0"
